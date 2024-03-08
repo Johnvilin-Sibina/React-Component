@@ -1,18 +1,19 @@
-/* function Card(){
+//Basic example to create a component and exporting and importing it
+/*function Card(){
     return <h1>Hello World!</h1>
 }
 export default Card */
-
-/* function Card(){
-    return <h1>Hello {1+1}</h1>
+/*function Card(){
+    return <h1>Hello {1+1}</h1> //JS inside HTML
 }
-export default Card */
+export default Card*/
 
+//Conditional Rendering
 /*function Card(){
     let a=5;
     return <h1>Hello { a>=5 ? <span>Greater</span> : <span>Smaller</span>} World!</h1>
 }
-export default Card*/ 
+export default Card*/
 
 //Example for inline CSS
 /*function Card(){
@@ -22,7 +23,7 @@ export default Card*/
 export default Card*/
 
 //Conditional Rendering:
-/* function Card(){
+/*function Card(){
     let price =501
     return (
         <h1>
@@ -41,15 +42,9 @@ export default Card*/
     return <h1>Hello <span style={{color: "red"}}>{props.place}</span>!</h1>
 }
 export default Card*/
-/*function Card({place}){ //object destructuring
-    return (
-    <h1>
-        Hello <span style={{color: "red"}}>{place}</span>!
-    </h1>
-  );
-}
-export default Card*/
-function Card({place}){
+
+//Example of Reusable components using Loop
+function Card({place}){ //object destructuring
     return (
     <h1>
         Hello <span style={{color: "red"}}>{place}</span>!
